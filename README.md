@@ -62,4 +62,5 @@ http://barangulesen.com/
 http://at.or.at/hans/
 http://www.martin-brinkmann.de/indexd.html
 http://makezine.com/2008/11/03/howto-hacking-rjdj-with-p/
+http://createdigitalmusic.com/2010/10/libpd-put-pure-data-in-your-app-on-an-iphone-or-android-and-everywhere-free/
 
