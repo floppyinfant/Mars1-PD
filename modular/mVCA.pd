@@ -1,0 +1,6 @@
+#N canvas 0 0 450 300 10;
+#X text 17 16 VCA \, Voltage Controlled Amplifier;
+#X obj 46 81 inlet~;
+#X obj 44 238 outlet~;
+#X obj 189 81 inlet;
+#X text 188 60 Modulation;

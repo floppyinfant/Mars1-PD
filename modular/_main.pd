@@ -1,0 +1,27 @@
+#N canvas 413 33 730 421 10;
+#X declare -lib mrpeach;
+#X obj 246 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 246 183 metro 500;
+#X obj 246 37 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 297 36 120;
+#X msg 336 35 145;
+#X msg 372 34 100;
+#X floatatom 297 160 5 0 0 0 - - -;
+#X obj 297 136 mBpm;
+#X obj 406 134 mSequencer;
+#X floatatom 406 169 5 0 0 0 - - -;
+#X obj 32 151 mDAW;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 8 0;
+#X connect 3 0 7 0;
+#X connect 3 0 8 1;
+#X connect 4 0 7 0;
+#X connect 4 0 8 1;
+#X connect 5 0 7 0;
+#X connect 5 0 8 1;
+#X connect 6 0 1 1;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;

@@ -1,0 +1,15 @@
+#N canvas 0 0 694 472 10;
+#X text 92 107 Modes;
+#X text 101 127 Up;
+#X text 102 145 Down;
+#X text 102 181 Random;
+#X text 103 258 Pattern;
+#X text 101 163 Up-And-Down;
+#X text 102 198 As-played;
+#X text 91 241 Step-Sequencer;
+#X text 290 109 Latch | Hold;
+#X text 294 256 Rest;
+#X text 294 242 Pitch;
+#X text 291 125 Gate;
+#X text 294 285 Accent | Velocity;
+#X text 294 272 Tie | Sustain or Glide;

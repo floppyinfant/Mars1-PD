@@ -1,0 +1,4 @@
+#N canvas 0 0 450 300 10;
+#X text 34 28 Sampler;
+#X obj 39 253 outlet~ left;
+#X obj 126 253 outlet~ right;

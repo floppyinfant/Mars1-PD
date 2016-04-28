@@ -1,0 +1,105 @@
+#N canvas 151 4 1130 662 10;
+#X text 11 11 Sequencer;
+#X text 410 121 Song-Mode;
+#X text 411 221 Pattern-Mode;
+#X text 525 121 Loop with Cue-Points;
+#X text 593 144 Recording;
+#X text 595 165 Dubbing;
+#X text 528 222 Looping;
+#X text 551 243 Live Recording;
+#X text 523 68 e.g. Yamaha QY100;
+#X text 523 91 e.g. Ableton Live;
+#X text 999 48 mute | solo;
+#X text 999 94 transpose;
+#X text 1001 118 Motiv "Umkehrung" \, "Krebs" \, ...;
+#X text 887 16 Variations per Instrument;
+#X text 999 70 Part (Intro \, Strophe \, Refrain \, Fill \, End);
+#X text 414 365 Arpeggiator;
+#X text 463 335 e.G. one-beat loop + variations at 8 \, 16 \, 32;
+#X obj 825 376 mARP;
+#X obj 817 292 mSTEP;
+#X obj 826 262 mTR;
+#X text 407 14 Tracks (Voices \, Instruments): Bass \, Rhythm \, Lead
+\, Strings \, Drum-Kit \, Percussions \, FX;
+#X text 437 40 Song-Parts | Sections: Intro \, Fill-AB \, Strophe \,
+Refrain \, Fill-BA \, End;
+#X text 415 313 Phrases | Sequence;
+#X text 418 542 Tabellen;
+#X text 527 559 Tonleitern;
+#X text 527 605 Quintenzirkel;
+#X text 527 582 Akkorde \, Harmonien;
+#X text 529 460 Stil;
+#X text 530 483 Rhythmus;
+#X text 529 507 Akkordwechsel;
+#X text 416 439 Begleitung (e.g. band-in-a-box);
+#X text 528 295 Step-Mode (e.g. Korg Poly-800);
+#X text 552 266 TR-Mode (e.g. Roland TR-808) | Piano-Roll;
+#X text 520 190 Sequence of Patterns: Point-and-click for Boxes on
+Grid;
+#X text 529 380 e.g. Korg Poly 61;
+#X text 530 404 e.g. Kirnu VST-plugin;
+#X obj 171 394 mod 4;
+#X obj 171 421 sel 0 1 2 3;
+#X obj 171 568 outlet midinotes;
+#X msg 121 469 60;
+#X msg 186 477 5;
+#X obj 171 505 +;
+#X floatatom 171 537 5 0 0 0 - - -;
+#X obj 204 505 +;
+#X obj 238 505 +;
+#X obj 270 505 +;
+#X msg 219 477 7;
+#X msg 253 477 2;
+#X msg 285 477 -5;
+#X obj 171 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 171 157 metro 500;
+#X obj 171 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 222 134 5 0 0 0 - - -;
+#X obj 222 110 mBpm;
+#X obj 222 53 inlet bpm;
+#X obj 142 53 inlet start;
+#X obj 171 242 f 0;
+#X obj 215 242 + 1;
+#X floatatom 171 270 5 0 0 0 - - -;
+#X text 16 109 Metronom;
+#X text 16 235 Timebase;
+#X obj 53 549 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 63 559 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 73 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 83 579 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 36 0 37 0;
+#X connect 37 0 41 0;
+#X connect 37 0 61 0;
+#X connect 37 1 43 0;
+#X connect 37 1 62 0;
+#X connect 37 2 44 0;
+#X connect 37 2 63 0;
+#X connect 37 3 45 0;
+#X connect 37 3 64 0;
+#X connect 39 0 41 0;
+#X connect 39 0 43 0;
+#X connect 39 0 44 0;
+#X connect 39 0 45 0;
+#X connect 40 0 41 1;
+#X connect 41 0 42 0;
+#X connect 42 0 38 0;
+#X connect 46 0 43 1;
+#X connect 47 0 44 1;
+#X connect 48 0 45 1;
+#X connect 49 0 56 0;
+#X connect 50 0 49 0;
+#X connect 51 0 50 0;
+#X connect 52 0 50 1;
+#X connect 53 0 52 0;
+#X connect 54 0 53 0;
+#X connect 55 0 51 0;
+#X connect 56 0 58 0;
+#X connect 56 0 57 0;
+#X connect 57 0 56 1;
+#X connect 58 0 36 0;

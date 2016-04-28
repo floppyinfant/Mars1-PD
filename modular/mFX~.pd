@@ -1,0 +1,8 @@
+#N canvas 298 37 450 300 10;
+#X text 22 16 FX \, Effects;
+#X text 176 102 EQ \, Equalizer;
+#X text 178 152 FX;
+#X text 176 198 Dynamics;
+#X obj 44 266 outlet~;
+#X obj 43 61 inlet~;
+#X connect 5 0 4 0;
